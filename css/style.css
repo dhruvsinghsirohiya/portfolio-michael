@@ -1,0 +1,31 @@
+body{
+    background: #1b1b1b;
+    
+}
+
+/* Add this to your style.css */
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1.;
+    }
+}
+
+@keyframes slideOutToRight {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.nav-items {
+    animation: slideInFromRight 0.5s forwards;
+}
+
+.nav-items-hidden {
+    animation: slideOutToRight 0.5s forwards;
+}

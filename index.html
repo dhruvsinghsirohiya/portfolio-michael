@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="w-full lg:fixed top-0 left-0 z-[999]">
+        <nav class="sm:w-[90%] px-1 sm:px-0 flex justify-between items-center py-2 md:py-5 mx-auto">
+            <a href="" class="text-yellow-500 hover:text-white duration-300 font-bold text-[26px]">Michael</a>
+            <!-- Full Device nav items start -->
+            <ul class="text-white lg:flex font-[600] hidden gap-12">
+                <li><a href="" class="hover:text-yellow-500 duration-300">Home</a></li>
+                <li><a href="#about-us" class="hover:text-yellow-500 duration-300">About Us</a></li>
+                <li><a href="#services" class="hover:text-yellow-500 duration-300">Services</a></li>
+                <li><a href="#experiences" class="hover:text-yellow-500 duration-300">Experiences</a></li>
+                <li><a href="#portfolio" class="hover:text-yellow-500 duration-300">Portfolio</a></li>
+                <li><a href="#blog" class="hover:text-yellow-500 duration-300">Blog</a></li>
+                <li><a href="#contact-us" class="hover:text-yellow-500 duration-300">Contact Us</a></li>
+            </ul>
+            <!-- Full Device nav items end -->
+             <!-- Mobile Device nav items start -->
+            <ul id="nav-items" class="text-white hidden lg:hidden items-center flex-col gap-8  justify-center items-center absolute z-[9999] left-0 top-0 w-[100%] h-[100%] font-[600] bg-gray-900">
+                <li><a href="" class="menu-close hover:text-yellow-500 duration-300">Home</a></li>
+                <li><a href="#about-us" class="menu-close hover:text-yellow-500 duration-300">About Us</a></li>
+                <li><a href="#services" class="menu-close hover:text-yellow-500 duration-300">Services</a></li>
+                <li><a href="#experiences" class="menu-close hover:text-yellow-500 duration-300">Experiences</a></li>
+                <li><a href="#portfolio" class="menu-close hover:text-yellow-500 duration-300">Portfolio</a></li>
+                <li><a href="#blog" class="menu-close hover:text-yellow-500 duration-300">Blog</a></li>
+                <li><a href="#contact-us" class="menu-close hover:text-yellow-500 duration-300">Contact Us</a></li>
+                <li  id="" class="menu-close lg:hidden text-[30px] cursor-pointer text-yellow-500 hover:text-white font-bold"><i class="fa-solid fa-xmark"></i></li>
+            </ul>
+             <!-- Mobile Device nav items end -->
+            <div class="lg:hidden">
+                <i id="menu-open" class="fa-solid text-white text-[23px] fa-bars cursor-pointer"></i>
+            </div>
+        </nav>
+    </header>
+    <script src="https://kit.fontawesome.com/1da2bcf95c.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
