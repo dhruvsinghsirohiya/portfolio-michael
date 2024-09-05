@@ -15,6 +15,7 @@
 
     // Close menu with animation
     menuClose.forEach((closeBtn) => {
+        // console.log(closeBtn);
       closeBtn.addEventListener("click", () => {
           navItems.classList.remove("nav-items");
           navItems.classList.add("nav-items-hidden"); 
