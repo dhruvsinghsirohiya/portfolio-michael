@@ -2,6 +2,7 @@
     const menuOpen = document.getElementById("menu-open");
     const menuClose = document.querySelectorAll(".menu-close");
     const navItems = document.getElementById("nav-items");
+    const navGray =document.querySelectorAll(".nav-background");
 
     // console.log(menuClose);
 
@@ -25,3 +26,20 @@
           }, 1000);
       });
   });
+
+  // Add smooth scrolling to navigation links
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+        navGray.forEach((navBg) => {
+        navBg.classList.remove("bg-[#2b2c2c]");
+        navBg.classList.add("bg-[#252525]");
+      });
+    } else {
+        navGray.forEach((navBg) => {
+        navBg.classList.remove("bg-[#252525]");
+        navBg.classList.add("bg-[#2b2c2c]");
+      });
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);

@@ -1,5 +1,6 @@
 body{
-    background: #1b1b1b;
+    background: #2b2c2c;
+    font-family: "Poppins", sans-serif;
     
 }
 
@@ -22,6 +23,7 @@ body{
     }
 }
 
+ 
 .nav-items {
     animation: slideInFromRight 0.5s forwards;
 }
