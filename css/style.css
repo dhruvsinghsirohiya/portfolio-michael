@@ -1,3 +1,6 @@
+*{
+    scroll-behavior: smooth;
+}
 body{
     background: #2b2c2c;
     font-family: "Poppins", sans-serif;
@@ -31,3 +34,40 @@ body{
 .nav-items-hidden {
     animation: slideOutToRight 0.5s forwards;
 }
+
+.about-bg {
+    background-image: url("/images/aboutBg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.about-main{
+    height: 52vh;
+
+}
+
+@media (max-width: 1024px) {
+    
+    .about-main {
+        height:70vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-main {
+        height: 50vh;
+    }
+}
+
+
+@media (max-width: 577px) {
+    .about-main {
+        height: 35vh;
+    }
+}
+
+
+

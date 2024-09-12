@@ -3,6 +3,7 @@
     const menuClose = document.querySelectorAll(".menu-close");
     const navItems = document.getElementById("nav-items");
     const navGray =document.querySelectorAll(".nav-background");
+    const downloadBtn = document.getElementById("downloadBtn");
 
     // console.log(menuClose);
 
@@ -43,3 +44,17 @@
   };
 
   window.addEventListener("scroll", handleScroll);
+
+  downloadBtn.addEventListener(
+    "click", function() {
+
+    const pdfUrl = 'pdf/dbPDF.pdf'; // file Path
+
+    const a = document.createElement('a');
+    a.href = pdfUrl;
+    a.download = 'resume.pdf';
+    document.body.appendChild(a);
+    
+    a.click();
+     document.body.removeChild(a);
+    });

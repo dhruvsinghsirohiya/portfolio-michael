@@ -16,7 +16,7 @@
             <a href="" class="text-yellow-500 hover:text-white duration-300 font-bold cursor-pointer text-[26px]">Michael</a>
             <!-- Full Device nav items start -->
             <ul class="text-white lg:flex font-[600] hidden gap-12">
-                <li><a href="" class="hover:text-yellow-500 duration-300">Home</a></li>
+                <li><a href="#home" class="hover:text-yellow-500 duration-300">Home</a></li>
                 <li><a href="#about-us" class="hover:text-yellow-500 duration-300">About Us</a></li>
                 <li><a href="#services" class="hover:text-yellow-500 duration-300">Services</a></li>
                 <li><a href="#experiences" class="hover:text-yellow-500 duration-300">Experiences</a></li>
@@ -27,7 +27,7 @@
             <!-- Full Device nav items end -->
              <!-- Mobile Device nav items start -->
             <ul id="nav-items" class="text-white hidden lg:hidden items-center flex-col gap-8  justify-center items-center absolute z-[9999] left-0 top-0 w-[100%] h-[100%] font-[600] bg-gray-900">
-                <li><a href="" class="menu-close hover:text-yellow-500 duration-300">Home</a></li>
+                <li><a href="#home" class="menu-close hover:text-yellow-500 duration-300">Home</a></li>
                 <li><a href="#about-us" class="menu-close hover:text-yellow-500 duration-300">About Us</a></li>
                 <li><a href="#services" class="menu-close hover:text-yellow-500 duration-300">Services</a></li>
                 <li><a href="#experiences" class="menu-close hover:text-yellow-500 duration-300">Experiences</a></li>
@@ -42,7 +42,7 @@
             </div>
         </nav>
     </header>
-    <main class="w-full">
+    <main id="home" class="w-full">
         <!-- Header Container end  -->
         <!-- HomeBanner Container start  -->
          <section class="w-[90%] md:flex justify-between items-center mt-20 mx-auto">
@@ -51,11 +51,36 @@
                 <p class="lg:text-[30px] text-[26px]">Freelance Web & Mobile UI/UX Designer</p>
                 <button class="text-[20px] mt-5 bg-yellow-500 py-3.5 px-16 rounded">Hire Me</button>
             </div>
-            <div class="md:w-[55%] mt-12 md:mt-0 py-4">
+            <div class="md:w-[55%] mt-12 md:mt-0 pt-4">
                 <img src="images/hero-banner.png" class="w-full" alt="">
             </div>
          </section>
         <!-- HomeBanner Container end  -->
+             <!-- About Container start  -->
+        <section id="about-us" class="bg-[#303131] py-12">
+            <div  class=" w-[90%] lg:flex justify-between items-center py-10 mx-auto">
+               <div class="w-full lg:w-[42%] about-main p-4 ">
+                <div class=" relative about-bg  mb-10 lg:mb-0">
+                    <h1 class="absolute inset-0 flex items-center justify-center text-white text-3xl md:text-[3rem] font-bold">
+                        <span class="border-b-4 border-yellow-500">About Us</span>
+                    </h1>
+                </div>
+               </div>
+                <div class="w-full mt-20 lg:mt-0 lg:w-[55%]">
+                    <p class="font-[400] mb-6 text-gray-400">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p class="font-[400] mb-6 text-gray-400">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nu pariatur excepteur sint occaecat.
+                    </p>
+                    <div class="flex justify-center md:justify-start">
+                        <button class="bg-yellow-500 border-2 me-4 border-yellow-500 duration-300 hover:bg-transparent rounded py-3.5 px-8 font-semibold text-white">View Works</button>
+                        <button class="border-2 me-4 border-yellow-500 bg-transparent hover:bg-yellow-500 duration-300 rounded py-3.5 px-8 font-semibold text-white" id="downloadBtn">Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!-- About Container end  -->
     </main>
     <script src="https://kit.fontawesome.com/1da2bcf95c.js" crossorigin="anonymous"></script>
     <script src="app.js"></script>
