@@ -88,4 +88,11 @@ body{
 }
 
 
+.experiences-con-span:hover h1{
+    color: black;
+}
+
+.experiences-con-span:hover p{
+    color: black;
+}
 
