@@ -4,6 +4,7 @@
     const navItems = document.getElementById("nav-items");
     const navGray =document.querySelectorAll(".nav-background");
     const downloadBtn = document.getElementById("downloadBtn");
+    const contactForm = document.getElementById("contactForm");
 
     // console.log(menuClose);
 
@@ -45,6 +46,7 @@
 
   window.addEventListener("scroll", handleScroll);
 
+  // download pdf button js
   downloadBtn.addEventListener(
     "click", function() {
 
@@ -58,3 +60,55 @@
     a.click();
      document.body.removeChild(a);
     });
+
+    // contact form validation
+
+    contactForm.addEventListener(
+        "submit", 
+        function (e) {
+        let error = false;
+
+        // Validate each field
+        error = validate(e.target.name, "* Please enter your name"); // yaha per hum ek function ko call lga rhe hai ...
+        error = validate(e.target.phone, "* Please enter your phone number");
+    
+        // Validate email format
+        if (!validateEmail(e.target.email.value)) {
+            e.target.email.nextElementSibling.innerText = "* Please enter a valid email";
+            error = true;
+        } else {
+            e.target.email.nextElementSibling.innerText = "";
+        }
+    
+        // Prevent form submission if there's an error
+        if (error) {
+            e.preventDefault();
+        } else{
+            alert("Form submitted successfully!");
+            e.preventDefault();
+            e.target.name.value = "";
+            e.target.phone.value = "";
+            e.target.email.value = "";
+            e.target.message.value = "";
+        }
+    });
+    
+    // Validate email format
+    function validateEmail(email) {
+        return email.match(
+            /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        );
+    }
+    
+    // Validate fields
+    function validate(elem, msg) {
+        if (elem.value === "") {
+            elem.nextElementSibling.innerText = msg;
+            return true;
+        } else {
+            elem.nextElementSibling.innerText = "";
+            return false;
+        }
+    }
+    
+
