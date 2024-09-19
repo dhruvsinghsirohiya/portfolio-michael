@@ -37,7 +37,7 @@ body{
 }
 
 .about-bg {
-    background-image: url("/images/aboutBg.png");
+    background-image: url("/images/aboutBanner.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

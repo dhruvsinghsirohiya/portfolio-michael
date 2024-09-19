@@ -81,16 +81,12 @@
         }
     
         // Prevent form submission if there's an error
-        if (error) {
-            e.preventDefault();
-        } else{
-            alert("Form submitted successfully!");
-            e.preventDefault();
-            e.target.name.value = "";
-            e.target.phone.value = "";
-            e.target.email.value = "";
-            e.target.message.value = "";
-        }
+    if (error) {
+        e.preventDefault();
+    } else {
+        e.preventDefault(); // Prevent the default form submission
+        sendMail(e);
+    }
     });
     
     // Validate email format
@@ -111,4 +107,27 @@
         }
     }
     
+
+    function sendMail(e) {
+        // let params = {
+        //     name: e.target.name.value,
+        //     email: e.target.email.value,
+        //     message: e.target.message.value,
+        //     phone: e.target.phone.value
+        // };
+
+        // emailjs.send("service_yxqac69", "template_fcfrob7", params)
+        //     .then(() => {
+                alert("Form submitted successfully!");
+
+                // Clear form fields after successful submission
+                e.target.name.value = "";
+                e.target.phone.value = "";
+                e.target.email.value = "";
+                e.target.message.value = "";
+            // })
+            // .catch((error) => {
+            //     console.error("Error sending email:", error);
+            // });
+    }
 

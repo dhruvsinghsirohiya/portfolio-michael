@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body id="top">
     <!-- Header Container start  -->
      <header class="w-full lg:sticky py-2.5 nav-background bg-[#2b2c2c] duration-300 top-0 left-0 z-[999]">
         <nav class="sm:w-[90%] px-1 sm:px-0 flex justify-between items-center py-2 md:py-5 mx-auto">
@@ -52,11 +52,11 @@
             </div>
          </section>
         <!-- HomeBanner Container end  -->
-             <!-- About Container start  -->
+         <!-- About Container start  -->
         <section id="about-us" class="bg-[#303131] py-12">
             <div  class=" w-[90%] lg:flex justify-between items-center py-10 mx-auto">
                <div class="w-full lg:w-[42%] about-main p-4 ">
-                <div class=" relative about-bg  mb-10 lg:mb-0">
+                <div class=" relative about-bg mb-10 lg:mb-0">
                     <h1 class="absolute inset-0 flex items-center justify-center text-white text-3xl md:text-[3rem] font-bold">
                         <span class="border-b-4 border-yellow-500">About Us</span>
                     </h1>
@@ -76,9 +76,9 @@
                 </div>
             </div>
         </section>
-            <!-- About Container end  -->
-            <!-- Services Container start  -->
-            <section id="services" class="bg-[#2b2c2c] py-20">
+        <!-- About Container end  -->
+        <!-- Services Container start  -->
+        <section id="services" class="bg-[#2b2c2c] py-20">
                 <div class="w-[90%] flex justify-center flex-col items-center mx-auto">
                     <h1 class="text-[30px] md:text-[35px] md:text-[45px] border-b-4 border-yellow-500 font-bold text-white text-center">Services</h1>
                     <p class="w-[90%] text-[14px] md:text-[16px] sm:w-[80%] md:w-[66%] py-4 md:py-10 text-gray-400 text-center">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natur</p>
@@ -105,10 +105,10 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- Services Container end  -->
-            <!-- Experience Container start  -->
-             <section id="experiences" class="bg-[#2b2c2c] py-20">
+        </section>
+        <!-- Services Container end  -->
+        <!-- Experience Container start  -->
+        <section id="experiences" class="bg-[#2b2c2c] py-20">
                 <div class="w-[90%] flex justify-center flex-col items-center mx-auto">
                     <h1 class="text-[30px] md:text-[35px] md:text-[45px] border-b-4 border-yellow-500 font-bold text-white text-center">Work Experiences</h1>
                     <p class="w-[90%] text-[14px] md:text-[16px] mb-12 sm:w-[80%] md:w-[66%] py-4 md:py-10 text-gray-400 text-center">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus</p>
@@ -133,10 +133,10 @@
                         </div>
                     </div>
                 </div>
-             </section>
-            <!-- Experience Container end  -->
-            <!-- Contact Container start  -->
-             <section  id="contact-us" class="bg-[#2b2c2c] py-10 md:py-20">
+        </section>
+        <!-- Experience Container end  -->
+        <!-- Contact Container start  -->
+        <section  id="contact-us" class="bg-[#2b2c2c] py-10 md:py-20">
                 <div class="w-[90%] flex justify-center flex-col items-center mx-auto ">
                     <h1 class="text-[30px] md:text-[35px] md:text-[45px] border-b-4 border-yellow-500 font-bold text-white text-center">Contact Me</h1>
                     <div class="md:flex justify-between w-full mt-5 py-10">
@@ -202,8 +202,8 @@
                         </div>
                     </div>
                 </div>
-             </section>
-            <!-- Contact Container end  -->
+        </section>
+        <!-- Contact Container end  -->
     </main>
     <!-- Footer Container start  -->
      <footer class="bg-[#2b2c2c] pt-20">
@@ -235,8 +235,23 @@
         Copyright © 2023 Michael
         </p>
     </footer>
+    <a href="#top" class="fixed right-2 bottom-2 cursor-pointer py-[12px] px-[19px] hover:bg-yellow-500 duration-300 hover:text-white text-[20px] font-bold bg-white rounded-full">
+            
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
     <!-- Footer Container end  -->
+     <!-- JS Scripts -->
     <script src="https://kit.fontawesome.com/1da2bcf95c.js" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "p8Uzs2ewLhnTMpB3e",
+        });
+    })();
+    </script>
+     <script src="app.js"></script>
 </body>
 </html>
